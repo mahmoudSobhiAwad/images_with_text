@@ -11,7 +11,7 @@ class ImageWithNetwork extends StatelessWidget {
   Widget build(BuildContext context) {
     // to use image from internt we use image.network with image source url
     return Image.network(
-      height: 200,//add const height to make both have the same height.
+      height: imageHeight,//add const height to make both have the same height.
       imageSourceUrl, //the url of image
       fit: BoxFit.fill, // fit
       // error widget incase image has issue

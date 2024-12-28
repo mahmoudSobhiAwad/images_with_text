@@ -11,7 +11,7 @@ class ImageWithAsset extends StatelessWidget {
   Widget build(BuildContext context) {
     //to use images from local files we use image.asset.
     return Image.asset(
-       height: 200,
+       height: imageHeight,
       //incase any error happen we return error image.
       errorBuilder: (context, _, s) {
         return const ErrorImageWidget();
